@@ -1,0 +1,64 @@
+# See http://rmarkdown.rstudio.com/rmarkdown_websites.html
+
+name: "test website"
+output_dir: "."
+navbar:
+  title: "test website"
+  # type: inverse
+  icon: fa-home
+  left:
+    - text: "R Book"
+      icon: fa-book
+      menu:
+        - text: "Web book"
+          icon: fa-firefox
+          href: https://intro2r.com
+        - text: "----"
+        - text: "PDF book"
+          icon: fa-file-pdf
+          href: https://github.com/alexd106/Rbook/raw/master/docs/Rbook.pdf
+    - text: "Exercises"
+      icon: fa-file-contract
+      menu:
+        - text: "Excercises"
+          icon: fa-folder
+          href: exercises.html
+        - text: "----"
+        - text: "Exercise solutions"
+          icon: fa-folder
+          href: exercise_solutions.html
+    - text: "Data"
+      icon: fa-download
+      href: "data.html"
+    - text: "Tutorials"
+      icon: fa-desktop
+      href: "Tutorials.html"
+    - text: "Info"
+      icon: fa-question-circle
+      menu:
+        - text: "----"
+        - text: "Resources"
+          icon: fa-book
+          href: "resources.html"
+        - text: "Source code"
+          icon: fa-github fa-lg
+          href: https://github.com/alexd106/intro2R
+
+output:
+  html_document:
+    theme: flatly
+    highlight: tango
+    toc: true
+    toc_depth: 2
+    toc_float:
+      collapsed: false
+    fig_align: center
+    # anchor_sections = FALSE
+    includes:
+    #  in_header: GA_script.html
+    # css: 'styles.css'
+    # css:
+    #  - https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css
+    #  - styles.css
+
+exclude: ["LICENSE", "README.md", "*.Rproj", "*.key", "*.psd"]
