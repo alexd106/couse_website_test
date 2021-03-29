@@ -17,7 +17,7 @@ if (!file.exists("data/all_data.zip")) system("rm data/all_data.zip ; zip -r dat
 ```
 -->
 
-```{r zipdir2, include=TRUE}
+```{r zipdir2, include=FALSE}
 if (file.exists("data/all_data.zip")){
   file.remove("data/all_data.zip")
 }
