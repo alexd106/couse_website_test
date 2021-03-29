@@ -1,4 +1,4 @@
-## ----Q1, results = 'asis'----------------------------------------------------------------------------
+## ----Q1, results = 'asis', eval= T--------------------------------
 
 # area of a circle
 # the equation to calculate the area of a circle is pi * radius^2
@@ -12,6 +12,8 @@ circle.area <- function(d){
 circle.area(10)
 # [1] 78.53982
 
+plot(0:100, circle.area(0:100))
+
 # to test on a vector of diameters
 # first create a vector with diameters ranging from 0 to 50 in steps of 10
 
@@ -23,7 +25,7 @@ circle.area(cir.diam)
 # [1]    0.00000   78.53982  314.15927  706.85835 1256.63706 1963.49541
 
 
-## ----Q2, tidy = TRUE---------------------------------------------------------------------------------
+## ----Q2, tidy = TRUE----------------------------------------------
 
 far.cent <- function(a){
 	val <- (a-32)*5/9
@@ -41,7 +43,7 @@ far.cent2 <- function(a){
 
 
 
-## ----Q3----------------------------------------------------------------------------------------------
+## ----Q3-----------------------------------------------------------
 
 # Create a vector of normally distributed data
 # length 100, mean 35 and standard deviation of 29
@@ -65,7 +67,7 @@ summary.fun <- function(dat){
 summary.fun(vals)
 
 
-## ----Q4----------------------------------------------------------------------------------------------
+## ----Q4-----------------------------------------------------------
 
 # calculate a median
 
@@ -89,7 +91,7 @@ ourmedian(mydat)
 median(mydat)
 
 
-## ----Q5, tidy = TRUE---------------------------------------------------------------------------------
+## ----Q5, tidy = TRUE----------------------------------------------
 
 # function to simulate Ricker model
 
